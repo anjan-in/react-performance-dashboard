@@ -1,11 +1,11 @@
-# react-performance-dashboard
+# 📊 react-performance-dashboard
 
 A React-based dashboard to monitor and visualize frontend performance metrics like FPS, memory usage, and render time using Web APIs and optional WebAssembly (WASM).
 
 A real-time dashboard to monitor key frontend performance metrics
 FPS • Memory Usage • Render Time • WASM Integration • Lazy Loading • Recharts Visualization
 
-## Features
+## 🎯 Features
 
 - FPS Monitoring using requestAnimationFrame
 - Memory Usage Tracking via performance.memory (Chrome only)
@@ -16,7 +16,7 @@ FPS • Memory Usage • Render Time • WASM Integration • Lazy Loading • R
 - Responsive UI using Tailwind CSS
 - Built with React + Vite
 
-## What I Learned
+## 🧠 What I Learned
 
 - Measuring FPS & memory via Web APIs
 - Optimizing components using lazy loading & code splitting
@@ -24,19 +24,23 @@ FPS • Memory Usage • Render Time • WASM Integration • Lazy Loading • R
 - Visualizing live data with Recharts
 - Performance profiling with Chrome DevTools
 
-## Tech Stack
 
-- React
-- JavaScript / Web APIs
-- WebAssembly (WASM)
+## 📦 Tech Stack
+
+- React 18
+- Vite
 - Tailwind CSS
+- Recharts
+- WebAssembly (Emscripten + C)
+- JavaScript (ES6+) / Web APIs
 - Chrome DevTools
 
-## Screenshots
+
+## 📸 Screenshots
 
 ![Dashboard Preview](./src/assets/dashboard.png)
 
-## Project Structure
+## 📁 Project Structure
 
 react-performance-dashboard/
 ├── public/
@@ -51,16 +55,8 @@ react-performance-dashboard/
 ├── package.json
 └── README.md
 
-## Tech Stack
 
-- React 18
-- Vite
-- Tailwind CSS
-- Recharts
-- WebAssembly (Emscripten + C)
-- JavaScript (ES6+)
-
-## 🚀 How to Run
+## ⚙️ How to Run
 
 # Clone the repo
 git clone https://github.com/anjan-in/react-performance-dashboard.git
@@ -87,16 +83,19 @@ Currently, two official plugins are available:
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
 
-## Compile WASM (Optional)
+## 🧪 Compile WASM (Optional)
 
 Make sure Emscripten is installed.
 
 `emcc wasm-src/fibonacci.c -Os -s WASM=1 -s SIDE_MODULE=1 -o public/wasm/fibonacci.wasm`
 
-## Author
-ANJAN SEN 
+## 👨‍💻 Author
+ANJAN SEN - 
 Built as part of my application for Frontend Engineer @ Adobe
-Feedback and collaboration welcome!
+
+## 🚀 Live Demo
+- Check here: [react-performance-dashboard.netlify.app](https://react-performance-dashboard.netlify.app)
+
 
 ## 📬 Contact
 Feel free to reach out!
