@@ -4,6 +4,7 @@ const FpsMonitor = lazy(() => import('./components/FpsMonitor'))
 const MemoryUsage = lazy(() => import('./components/MemoryUsage'))
 const RenderTime = lazy(() => import('./components/RenderTime'))
 const FibonacciWasm = lazy(() => import('./components/FibonacciWasm'))
+const FpsChart = lazy(() => import('./components/FpsChart'))
 
 function App() {
   return (
@@ -13,6 +14,10 @@ function App() {
       <Suspense fallback={<p>Loading FPS Monitor...</p>}>
         <FpsMonitor />
       </Suspense>
+      <Suspense fallback={<p>Loading Chart...</p>}>
+        <FpsChart />
+      </Suspense>
+
       <Suspense fallback={<p>Loading Memory Usage...</p>}>
         <MemoryUsage />
       </Suspense>
