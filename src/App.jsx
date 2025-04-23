@@ -3,6 +3,7 @@ import { Suspense, lazy } from 'react'
 const FpsMonitor = lazy(() => import('./components/FpsMonitor'))
 const MemoryUsage = lazy(() => import('./components/MemoryUsage'))
 const RenderTime = lazy(() => import('./components/RenderTime'))
+const FibonacciWasm = lazy(() => import('./components/FibonacciWasm'))
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
       </Suspense>
       <Suspense fallback={<p>Loading Render Time...</p>}>
         <RenderTime />
+      </Suspense>
+      <Suspense fallback={<p>Loading WASM Module...</p>}>
+        <FibonacciWasm />
       </Suspense>
     </div>
   )
