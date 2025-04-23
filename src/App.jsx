@@ -1,5 +1,6 @@
 import FpsMonitor from './components/FpsMonitor'
 import MemoryUsage from './components/MemoryUsage'
+import RenderTime from './components/RenderTime'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <h1>⚡ React Performance Dashboard</h1>
       <FpsMonitor />
       <MemoryUsage />
+      <RenderTime />
     </div>
   )
 }
