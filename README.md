@@ -94,7 +94,7 @@ ANJAN SEN -
 Built as part of my application for Frontend Engineer @ Adobe
 
 ## 🚀 Live Demo
-- Check here: [react-performance-dashboard.netlify.app](https://react-performance-dashboard.netlify.app)
+- Check here: 🌐[react-performance-dashboard.vercel.app](https://react-performance-dashboard.vercel.app/)
 
 
 ## 📬 Contact
