@@ -9,7 +9,7 @@ const FpsChart = lazy(() => import('./components/FpsChart'))
 function App() {
   return (
     <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-      <h1>⚡ React Performance Dashboard</h1>
+      <h1>React Performance Dashboard</h1>
 
       <Suspense fallback={<p>Loading FPS Monitor...</p>}>
         <FpsMonitor />
